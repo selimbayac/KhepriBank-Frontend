@@ -1,16 +1,59 @@
-# React + Vite
+# KhepriBank Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KhepriBank müşteri destek uygulamasının **React** tabanlı modern frontend arayüzü.
 
-Currently, two official plugins are available:
+Bu proje, backend tarafındaki AI destekli şikayet yönetim sistemine (KhepriBank Backend) bağlı olarak çalışan kullanıcı arayüzünü içermektedir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Özellikler
 
-## React Compiler
+- Modern ve temiz kullanıcı arayüzü (Tailwind CSS)
+- React + Vite ile hızlı geliştirme ortamı
+- Responsif (mobil uyumlu) tasarım
+- Backend API entegrasyonu (RESTful API calls)
+- Şikayet oluşturma, listeleme ve detay görüntüleme
+- Yapay zeka analiz sonuçlarını (UrgencyScore, SuggestedAction, CustomerResponse) gösterme arayüzü
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Kullanılan Teknolojiler
 
-## Expanding the ESLint configuration
+- **React 18**
+- **Vite** (Build Tool)
+- **Tailwind CSS**
+- **JavaScript / JSX**
+- Axios (veya Fetch) ile API Entegrasyonu
+- ESLint + PostCSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Nasıl Çalıştırılır?
+
+1. Projeyi klonlayın:
+   ```bash
+   git clone https://github.com/selimbayac/KhepriBank-Frontend.git
+   cd KhepriBank-Frontend/KhepriBankFront
+   ```
+   2.Bağımlılıkları yükleyin:npm install
+   3.Geliştirme sunucusunu başlatın:npm run dev
+   4. Tarayıcıda http://localhost:5173 adresine gidin.
+
+Backend API ile bağlantı kurmak için .env dosyasında API base URL'sini ayarlayın.
+
+Proje Yapısı
+KhepriBankFront/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/     # Reusable bileşenler
+│   ├── pages/          # Ana sayfalar (Login, Dashboard, Complaint vb.)
+│   ├── services/       # API servisleri
+│   ├── utils/
+│   └── App.jsx
+├── index.html
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+
+Bağlantılı Projeler
+Backend API: KhepriBank Backend (.NET 8 + AI) https://github.com/selimbayac/banka-destek-api
+
+
+Hedef
+Bu frontend projesi, banka müşteri şikayetlerinin yapay zeka ile analiz edildiği modern bir müşteri destek paneli oluşturmayı amaçlamaktadır.
+
